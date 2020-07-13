@@ -1,0 +1,258 @@
+/* rgb(236, 208, 72)*/
+/* rgb(12, 153, 104)*/
+/* rgb(105, 184, 213)*/
+/************
+miksin
+************/
+/************
+basic styles
+************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.page1 {
+  background: #ecd048;
+  background-image: linear-gradient(rgba(236, 208, 72, 0.3), rgba(236, 208, 72, 0.3)), url(../img/home-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 60px bottom -55px;
+  height: 100vh; }
+  @media (max-width: 736px) {
+    .page1 {
+      background-image: none; } }
+
+.page2 {
+  background: #0d9968;
+  height: 100vh; }
+
+.page3 {
+  background: #69b8d5;
+  background-image: url(../img/contact-pozadina.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 50px bottom -90px;
+  height: 100vh; }
+  @media (max-width: 736px) {
+    .page3 {
+      background-image: none; } }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+  font-size: 16px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: "Arizonia", sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #383838;
+  text-decoration: none; }
+  a:hover {
+    transition: 0.3 ease;
+    cursor: pointer; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+  @media (max-width: 736px) {
+    .container {
+      width: 95%; } }
+
+.headings {
+  font-size: 3.5rem;
+  font-weight: 900; }
+  @media (max-width: 736px) {
+    .headings {
+      font-size: 2.5rem; } }
+
+.headings::after {
+  display: block;
+  content: "";
+  height: 4px;
+  width: 50px;
+  background: #383838;
+  margin: 1px 0 10px 0; }
+
+/*********************
+nav
+*********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px; }
+  @media (max-width: 736px) {
+    nav {
+      flex-direction: column; } }
+  nav .logo {
+    font-family: "Arizonia", sans-serif;
+    color: #fff;
+    background: #383838;
+    padding: 5px 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 6px 25px; }
+    nav .logo:hover {
+      scale: 1.2; }
+    @media (max-width: 736px) {
+      nav .logo {
+        margin-bottom: 30px; } }
+  nav ul {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 736px) {
+      nav ul {
+        align-items: flex-start; } }
+    nav ul li {
+      margin: 0 20px;
+      text-transform: uppercase; }
+      nav ul li a {
+        color: #383838;
+        padding: 7px 16px;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        font-weight: 600; }
+        nav ul li a:hover {
+          color: #fff;
+          background: #383838; }
+
+/*********************
+hello
+*********************/
+article {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline; }
+  article .hello {
+    width: 50%; }
+    @media (max-width: 736px) {
+      article .hello {
+        width: 100%;
+        align-items: center; } }
+    article .hello p span {
+      font-weight: 700;
+      font-style: italic; }
+
+/*********************
+footer
+*********************/
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  @media (max-width: 736px) {
+    footer {
+      justify-content: center; } }
+  footer .icons {
+    display: flex; }
+    footer .icons i {
+      padding: 0 20px 0 0;
+      font-size: 1.5rem; }
+      footer .icons i:hover {
+        scale: 1.2; }
+
+/*********************
+contact
+*********************/
+.contact {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 10px 0; }
+  .contact .col:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 50px 0; }
+    @media (max-width: 736px) {
+      .contact .col:first-child {
+        flex: 0 0 100%;
+        padding: 0 20px 0 0; } }
+  .contact .col:last-child {
+    flex: 1;
+    display: flex; }
+    .contact .col:last-child form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 65px;
+      padding: 60px 0;
+      width: 100%; }
+      @media (max-width: 736px) {
+        .contact .col:last-child form {
+          margin-top: 20px; } }
+      .contact .col:last-child form input {
+        opacity: 0.5;
+        border-radius: 6px 25px;
+        margin-bottom: 20px;
+        padding: 8px;
+        font-size: 1.2rem;
+        border: none; }
+      .contact .col:last-child form textarea {
+        opacity: 0.5;
+        border-radius: 6px 25px;
+        margin-bottom: 20px;
+        padding: 8px;
+        font-size: 1.2rem;
+        border: none; }
+      .contact .col:last-child form button {
+        width: 100px;
+        color: #fff;
+        background: #383838;
+        padding: 5px 0;
+        margin-top: 15px;
+        border: none;
+        border-radius: 6px 25px; }
+
+/*********************
+about
+*********************/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px; }
+  .about .headings {
+    margin-top: 40px; }
+  .about .wraped {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    .about .wraped .img1 {
+      clear: right;
+      float: left;
+      margin: 10px; }
+      .about .wraped .img1 img {
+        width: 300px; }
+        @media (max-width: 736px) {
+          .about .wraped .img1 img {
+            display: none; } }
+    .about .wraped .img2 {
+      clear: left;
+      float: right;
+      margin: 5px; }
+      .about .wraped .img2 img {
+        width: 300px; }
+        @media (max-width: 736px) {
+          .about .wraped .img2 img {
+            display: none; } }
+    .about .wraped p {
+      text-align: justify; }
+
+/*# sourceMappingURL=style.css.map */
